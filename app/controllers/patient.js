@@ -12,7 +12,7 @@ router.get('/getById', function (req, res, next) {
             if(patient)
                 res.status(200).send(patient);
             else
-                res.status(404).send('Can not find patient!!!');
+                res.status(404).send('Can not find patient!!!!');
         });
     }
     else
