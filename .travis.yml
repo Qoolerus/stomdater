@@ -7,6 +7,8 @@ install:
   - npm install -g mocha
   - npm install chai
   - npm install chai-http
+
+script:  cd ./test/app/controllers/ && mocha home.js
  
 deploy:
   provider: heroku
