@@ -14,7 +14,7 @@ describe('patient getById test', function() {
 
     it('no query params', function(done) {
         chai.request(app).get('/patient/getById').end(function(err, res) {
-            // res.should.has.status(404);
+            res.should.has.status(404);
             res.text.should.equal('Can not find id in query parameters!');
             done();
         });
