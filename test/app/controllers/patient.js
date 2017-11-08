@@ -20,7 +20,7 @@ describe('patient getById test', function() {
     //     });
     // });
 
-      it('find succesfull', function(done) {
+      it('find succesfull', function() {
           chai.request(app).get('/patient/getById?id=1').end(function(err, res) {
               res.should.has.status(200);
               done();
