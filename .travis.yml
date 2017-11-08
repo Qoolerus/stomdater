@@ -7,11 +7,6 @@ install:
   - npm install -g mocha
   - npm install chai
   - npm install chai-http
-
-env:
-  - Test_dir=./test/app/controllers/
-
-script:  cd $Test_dir && mocha patient.js
  
 deploy:
   provider: heroku
