@@ -10,7 +10,7 @@ var chai = require('chai'),
 chai.use(chaihttp);
 
 describe('patient getById test', function() {
-    this.timeout(15000);
+    //this.timeout(15000);
 
     it('no query params', function(done) {
         chai.request(app).get('/patient/getById').end(function(err, res) {
