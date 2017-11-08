@@ -27,4 +27,12 @@ describe('patient getById test', function() {
             done();
         });
     });
+
+    it('adding patient success', function() {
+        chai.request(app).post('/patient/addPatient?name=Patient2&surname=Patient2&age=99').end(function(err, res) {
+            res.should.has.status(200);
+            res.text.should.equal('Patient created!');
+            done();
+        });
+    });
 });
