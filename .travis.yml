@@ -11,7 +11,7 @@ install:
 env:
   - Test_dir=./test/app/controllers/
 
-script:  cd $Test_dir && mocha *.js
+script:  cd $Test_dir && mocha patient.js
  
 deploy:
   provider: heroku
