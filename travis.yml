@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "6"
+
+install:
+  - npm install
+  - npm install -g mocha
+
+env:
+  - Test_dir=./test/app/controllers/
+
+script:  cd $Test_dir && mocha *.js
+ 
+deploy:
+  provider: heroku
+  app : stomdater
+  api_key:
+    secure: 78fcb891-2996-4d79-9951-8b67020b25eb
+  strategy: git
