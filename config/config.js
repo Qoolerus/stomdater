@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'stomdaterweb'
     },
-    port: 15569,
+    port: process.env.PORT || 15569,
     db: 'srv73493_stomd',
       options:
       {
@@ -28,7 +28,7 @@ var config = {
     app: {
       name: 'stomdaterweb'
     },
-    port: 15569,
+    port: process.env.PORT || 15569,
     db: 'srv73493_stomd',
       options:
       {
@@ -48,7 +48,7 @@ var config = {
     app: {
       name: 'stomdaterweb'
     },
-    port: 15569,
+    port: process.env.PORT || 15569,
     db: 'srv73493_stomd',
       options:
       {
